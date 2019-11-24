@@ -31,4 +31,5 @@ release/mainwindow.o
 release/mat.o
 release/search.o
 release/system.o
+release/tclhash.o
 release/moc_mainwindow.o

@@ -31,4 +31,5 @@ debug/mainwindow.o
 debug/mat.o
 debug/search.o
 debug/system.o
+debug/tclhash.o
 debug/moc_mainwindow.o

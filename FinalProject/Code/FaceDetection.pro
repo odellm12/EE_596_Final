@@ -44,7 +44,8 @@ SOURCES += main.cpp\
         mainwindow.cpp \
         mat.cpp \
         search.cpp \
-        system.cpp
+        system.cpp \
+        tclhash.cpp
 
 HEADERS  += mainwindow.h \
     ../../../ComputerVision-master/Algorithms/Detection/Common/Context.h \
@@ -78,6 +79,7 @@ HEADERS  += mainwindow.h \
     mat.h \
     search.h \
     structs.h \
-    system.h
+    system.h \
+    tclhash.h
 
 FORMS    += mainwindow.ui
