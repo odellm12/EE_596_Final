@@ -249,10 +249,10 @@ void MainWindow::RowleyFaceDetection()
 {
     int num = ui->randomNumBox->value();
 
-    ConvertQImage2Double(outImage);
-    RowleyFaceDetection(Image, num);
-    ConvertDouble2QImage(&outImage);
-
+    //ConvertQImage2Double(outImage);
+    //RowleyFaceDetection(Image, num);
+    //ConvertDouble2QImage(&outImage);
+    RowleyFaceDetection(&outImage, num);
     DrawDisplayImage();
 
 }

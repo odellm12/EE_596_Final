@@ -1,7 +1,21 @@
 #include "mainwindow.h"
 #include "math.h"
 #include "ui_mainwindow.h"
+#include "img.h"
+#include "mat.h"
+#include "list.h"
+#include "search.h"
+#include "follow.h"
+#include "structs.h"
+#include "context.h"
 #include <QtGui>
+#include <QByteArray>
+#include <QSize>
+#include <QList>
+#include <QApplication>
+#include <QDir>
+
+
 
 /***********************************************************************
   This is the only file you need to change for your assignment. The
@@ -125,7 +139,6 @@ void MainWindow::ConvertQImage2Double(QImage image)
     // Global variables to access image width and height
     imageWidth = image.width();
     imageHeight = image.height();
-
     // Initialize the global matrix holding the image
     // This is how you will be creating a copy of the original image inside a function
     // Note: 'Image' is of type 'double**' and is declared in the header file (hence global variable)
@@ -161,13 +174,133 @@ void MainWindow::ConvertDouble2QImage(QImage *image)
  https://courses.cs.washington.edu/courses/cse577/05sp/papers/rowley.pdf
 **************************************************/
 
-void MainWindow::RowleyFaceDetection(double** image, int num)
+void MainWindow::RowleyFaceDetection(QImage *image, int num)
 /*
  * image: input image in matrix form of size (imageWidth*imageHeight)*3 having double values
  * num: In case we need some type of user set parameter
 */
+// Global variables to access image width and height
 {
-    //code
+    const int minSize(0); // Where is this coming from ? TODO
+    const int maxSize(qMin(imageWidth, imageHeight));
+    const int minX(0);
+    const int maxX(imageWidth);
+    const int minY(0);
+    const int maxY(imageHeight);
+
+    BlackWhiteImage(image);
+    QImage buffer = image->copy();
+    int levels = 0;
+    int w = imageHeight, h = imageWidth;
+    while (w >= 20 && h >= 20) {
+        w = (int)(w / 1.2);
+        h = (int)(h / 1.2);
+        levels++;
+    }
+    int scaleRange = 1;
+    int minLevel = (int)floor(log(minSize / 20.0) / log(1.2));
+    if (minLevel < 0) minLevel = 0;
+    int maxLevel = (int)ceil(log(maxSize / 20.0) / log(1.2));
+    if (maxLevel >= levels) maxLevel = levels - 1;
+    if (levels > maxLevel + 1 + scaleRange) levels = maxLevel + 1 + scaleRange;
+
+    QImage* mainmask = new QImage(NULL);
+    QImage** imagePyramid = new QImage * [levels];
+    //ConvertQImage2Double(*image);
+
+    imagePyramid[0] = image;
+    for (int i = 1; i < levels; i++)
+    {
+        imagePyramid[i] = new QImage(NULL);
+        ReduceSize(imagePyramid[i], imagePyramid[i - 1]);
+    }
+    QImage* levelmask = new QImage(NULL);
+    QImage* mask = FindQImageWithName("facemask");
+    QImage* eyemask = FindQImageWithName("eyemask");
+    List<Detection> alldetections[1];
+    for (int i = maxLevel; i >= minLevel; i--)
+    {
+        //ResampleQImage(levelmask, mainmask,
+            //imagePyramid[i]->imageHeight, imagePyramid[i]->height,
+            //pow(1.2, -i));
+        List<Detection> detections;
+        SearchUmeEvenFasterRegion(imagePyramid[i], levelmask,
+            minX, maxX, minY, maxY, i,
+            Informedia_SaveDetections,
+            (ClientData)(&detections));
+        for (Detection* detect = detections.first; detect != NULL;
+            detect = detect->next)
+        {
+            int newX, newY, newS;
+            if (FindNewLocation(levels, imagePyramid, mask,
+                detect->x, detect->y, detect->s, 6, 6, 1, 2, 1,
+                &newX, &newY, &newS))
+            {
+                Informedia_SaveDetections((ClientData)alldetections,
+                    imagePyramid[newS],
+                    newX, newY, 20, 20, newS,
+                    pow(1.2, newS), 1.0, 0);
+                FillRectangle(mainmask,
+                    (int)(pow(1.2, newS) * newX + 0.5),
+                    (int)(pow(1.2, newS) * newY + 0.5),
+                    (int)(pow(1.2, newS) * (newX + 20) + 0.5),
+                    (int)(pow(1.2, newS) * (newY + 20) + 0.5),
+                    255);
+            }
+        }
+    }
+    List<Detection> results;
+    FuzzyVote2(width, height, 1, alldetections,
+        Informedia_SaveDetections, (ClientData)(&results),
+        2, 1, 1, 1, 0, mask);
+    QList<AlgDetOutput> foundObjs;
+    for (Detection* d = results.first; d != NULL; d = d->next)
+    {
+        FaceEyeLocation location;
+        int found = SearchEyes(levels, imagePyramid, eyemask,
+            d->x, d->y, d->s, 3,
+            &(location.rightx),
+            &(location.righty),
+            &(location.leftx),
+            &(location.lefty));
+        if (found) {
+            location.left = (location.leftx == -1) ? 0 : 1;
+            location.right = (location.rightx == -1) ? 0 : 1;
+        }
+        else {
+            location.left = -1;
+            location.right = -1;
+        }
+        double s = pow(1.2, d->s);
+        location.x1 = (int)floor(d->x * s + 0.5);
+        location.y1 = (int)floor(d->y * s + 0.5);
+        location.x2 = (int)floor((d->x + 20) * s + 0.5);
+        location.y2 = (int)floor((d->y + 20) * s + 0.5);
+        AlgDetOutput objLoc;
+        objLoc.Rectangle.setLeft(location.x1);
+        objLoc.Rectangle.setTop(location.y1);
+        objLoc.Rectangle.setRight(location.x2);
+        objLoc.Rectangle.setBottom(location.y2);
+        if (location.left == 1)
+        {
+            objLoc.Points.insert(algorithms::detection::LeftEyePoint, QPoint(location.leftx, location.lefty));
+        }
+        if (location.right == 1)
+        {
+            objLoc.Points.insert(algorithms::detection::RightEyePoint, QPoint(location.rightx, location.righty));
+        }
+        foundObjs << objLoc;
+    }
+
+    for (int i = 1; i < levels; i++) delete imagePyramid[i];
+    delete[] imagePyramid;
+    delete mainmask;
+    delete levelmask;
+
+    image->buffer = NULL;
+    delete image;
+    return foundObjs;
+
 }
 
 /**************************************************

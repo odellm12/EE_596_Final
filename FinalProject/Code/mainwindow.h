@@ -43,7 +43,7 @@ private:
     void FindPeaksImage(double** image, double thres);
     void HoughImage(double** image);
     void SmartKMeans(double** image);
-    void RowleyFaceDetection(double** image, int num);
+    void RowleyFaceDetection(QImage *image, int num);
     void GoogleFaceDetection(double** image, int num);
 
 
