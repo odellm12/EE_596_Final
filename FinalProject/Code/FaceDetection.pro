@@ -6,11 +6,15 @@
 
 QT       += core gui widgets
 
+QT       += core gui
+QT    += widgets
+
 TARGET = FaceDetection
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
+        ../../../../ComputerVision-master/Plugins/Databases/Cache/Detectors.cpp \
         ../../../ComputerVision-master/Algorithms/Detection/Common/Context.cpp \
         ../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/eye.cc \
         ../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/faces.cc \
@@ -48,6 +52,7 @@ SOURCES += main.cpp\
         tclhash.cpp
 
 HEADERS  += mainwindow.h \
+    ../../../../ComputerVision-master/Plugins/Databases/Cache/Detectors.h \
     ../../../ComputerVision-master/Algorithms/Detection/Common/Context.h \
     ../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/eye.hpp \
     ../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/faces.hpp \
@@ -71,6 +76,7 @@ HEADERS  += mainwindow.h \
     ../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/vote.hpp \
     ../../../ComputerVision-master/Common/Frame/Frame.h \
     context.h \
+    detect.h \
     eye.h \
     fast2.h \
     follow.h \

@@ -3,7 +3,7 @@
 #ifndef ALGORITHMS_COMMON_CONTEXT_H
 #define ALGORITHMS_COMMON_CONTEXT_H
 
-#include "../Detection/Common/Context.h"
+#include "context.h"
 #include "../Vectorization/Common/Context.h"
 #include "Algorithms.h"
 
