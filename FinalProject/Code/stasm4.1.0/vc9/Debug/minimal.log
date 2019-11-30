@@ -1,0 +1,56 @@
+﻿Build started 15/6/2014 20:27:20.
+     1>Project "D:\VS Projects\stasm4.1.0\stasm4.1.0\vc9\minimal.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\minimal.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IE:/OpenCV2.4.0/build/include /I../stasm /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\apps\minimal.cpp ..\stasm\MOD_1\facedet.cpp ..\stasm\MOD_1\initasm.cpp ..\stasm\asm.cpp ..\stasm\classicdesc.cpp ..\stasm\convshape.cpp ..\stasm\err.cpp ..\stasm\eyedet.cpp ..\stasm\eyedist.cpp ..\stasm\faceroi.cpp ..\stasm\hat.cpp ..\stasm\hatdesc.cpp ..\stasm\landmarks.cpp ..\stasm\misc.cpp ..\stasm\pinstart.cpp ..\stasm\print.cpp ..\stasm\shape17.cpp ..\stasm\shapehacks.cpp ..\stasm\shapemod.cpp ..\stasm\startshape.cpp ..\stasm\stasm.cpp
+         stasm.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         startshape.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         shapemod.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         shapehacks.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         shape17.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         print.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         pinstart.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         misc.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         landmarks.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         hatdesc.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         hat.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         faceroi.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         eyedist.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         eyedet.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         err.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         convshape.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         classicdesc.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         asm.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         initasm.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         facedet.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\stasm\stasm.h(33): fatal error C1083: Cannot open include file: 'opencv/cv.h': No such file or directory
+         Generating Code...
+         Compiling...
+         minimal.cpp
+     1>d:\vs projects\stasm4.1.0\stasm4.1.0\apps\minimal.cpp(6): fatal error C1083: Cannot open include file: 'opencv/highgui.h': No such file or directory
+         Generating Code...
+     1>Done Building Project "D:\VS Projects\stasm4.1.0\stasm4.1.0\vc9\minimal.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.71

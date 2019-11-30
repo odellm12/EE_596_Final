@@ -1,0 +1,65 @@
+﻿Build started 6/7/2014 21:52:50.
+     1>Project "C:\Users\Mosquito\Desktop\stasm4.1.0_build\stasm.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "stasm.dir\Debug\stasm.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Building Custom Rule C:/Users/Mosquito/Desktop/stasm4.1.0/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Mosquito\Desktop\stasm4.1.0_build\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\OpenCV\opencv\build\include /ID:\OpenCV\opencv\build\include\opencv /IC:\Users\Mosquito\Desktop\stasm4.1.0\stasm /IC:\Users\Mosquito\Desktop\stasm4.1.0\stasm\MOD_1 /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D IGTB_EXPORTS /D _WIN32_WINNT=0x0501 /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"stasm.dir\Debug\\" /Fd"stasm.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\stasm4.1.0\stasm\MOD_1\facedet.cpp ..\stasm4.1.0\stasm\MOD_1\initasm.cpp ..\stasm4.1.0\stasm\asm.cpp ..\stasm4.1.0\stasm\classicdesc.cpp ..\stasm4.1.0\stasm\convshape.cpp ..\stasm4.1.0\stasm\err.cpp ..\stasm4.1.0\stasm\eyedet.cpp ..\stasm4.1.0\stasm\eyedist.cpp ..\stasm4.1.0\stasm\faceroi.cpp ..\stasm4.1.0\stasm\hat.cpp ..\stasm4.1.0\stasm\hatdesc.cpp ..\stasm4.1.0\stasm\landmarks.cpp ..\stasm4.1.0\stasm\misc.cpp ..\stasm4.1.0\stasm\pinstart.cpp ..\stasm4.1.0\stasm\print.cpp ..\stasm4.1.0\stasm\shape17.cpp ..\stasm4.1.0\stasm\shapehacks.cpp ..\stasm4.1.0\stasm\shapemod.cpp ..\stasm4.1.0\stasm\startshape.cpp ..\stasm4.1.0\stasm\stasm.cpp ..\stasm4.1.0\stasm\stasm_lib.cpp
+         facedet.cpp
+         initasm.cpp
+         asm.cpp
+         classicdesc.cpp
+         convshape.cpp
+         err.cpp
+         eyedet.cpp
+         eyedist.cpp
+         faceroi.cpp
+         hat.cpp
+         hatdesc.cpp
+         landmarks.cpp
+         misc.cpp
+         pinstart.cpp
+         print.cpp
+         shape17.cpp
+         shapehacks.cpp
+         shapemod.cpp
+         startshape.cpp
+         stasm.cpp
+         Generating Code...
+         Compiling...
+         stasm_lib.cpp
+         Generating Code...
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\Mosquito\Desktop\stasm4.1.0_build\Debug\stasm.lib" /NOLOGO stasm.dir\Debug\facedet.obj
+         stasm.dir\Debug\initasm.obj
+         stasm.dir\Debug\asm.obj
+         stasm.dir\Debug\classicdesc.obj
+         stasm.dir\Debug\convshape.obj
+         stasm.dir\Debug\err.obj
+         stasm.dir\Debug\eyedet.obj
+         stasm.dir\Debug\eyedist.obj
+         stasm.dir\Debug\faceroi.obj
+         stasm.dir\Debug\hat.obj
+         stasm.dir\Debug\hatdesc.obj
+         stasm.dir\Debug\landmarks.obj
+         stasm.dir\Debug\misc.obj
+         stasm.dir\Debug\pinstart.obj
+         stasm.dir\Debug\print.obj
+         stasm.dir\Debug\shape17.obj
+         stasm.dir\Debug\shapehacks.obj
+         stasm.dir\Debug\shapemod.obj
+         stasm.dir\Debug\startshape.obj
+         stasm.dir\Debug\stasm.obj
+         stasm.dir\Debug\stasm_lib.obj
+     1>stasm.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         stasm.vcxproj -> C:\Users\Mosquito\Desktop\stasm4.1.0_build\Debug\stasm.lib
+       FinalizeBuildStatus:
+         Deleting file "stasm.dir\Debug\stasm.unsuccessfulbuild".
+         Touching "stasm.dir\Debug\stasm.lastbuildstate".
+     1>Done Building Project "C:\Users\Mosquito\Desktop\stasm4.1.0_build\stasm.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:10.52

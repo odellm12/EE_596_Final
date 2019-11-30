@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="minimal">
+</Property><Property Name="Solution File" Value="D:\VS Projects\stasm4.1.0\stasm4.1.0\vc9\minimal.sln">
+</Property><Property Name="Date" Value="2014年6月15日">
+</Property><Property Name="Time" Value="20:24">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="minimal.sln" Description="File successfully backed up as D:\VS Projects\stasm4.1.0\stasm4.1.0\vc9\minimal.sln.old">
+</Event><Event ErrorLevel="0" Project="minimal" Source="minimal.vcproj" Description="Converting project file 'D:\VS Projects\stasm4.1.0\stasm4.1.0\vc9\minimal.vcproj'.">
+</Event><Event ErrorLevel="1" Project="minimal" Source="minimal.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="minimal" Source="minimal.vcproj" Description="MSB8012: $(TargetPath) ('D:\VS Projects\stasm4.1.0\stasm4.1.0\vc9\Debug\minimal.exe') does not match the Linker's OutputFile property value 'minimal.exe' ('D:\VS Projects\stasm4.1.0\stasm4.1.0\vc9\minimal.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="minimal" Source="minimal.vcproj" Description="MSB8012: $(TargetPath) ('D:\VS Projects\stasm4.1.0\stasm4.1.0\vc9\Release\minimal.exe') does not match the Linker's OutputFile property value 'minimal.exe' ('D:\VS Projects\stasm4.1.0\stasm4.1.0\vc9\minimal.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="minimal" Source="minimal.vcproj" Description="Done converting to new project file 'D:\VS Projects\stasm4.1.0\stasm4.1.0\vc9\minimal.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="minimal" Source="minimal.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="minimal.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="minimal.sln" Description="Converted">
+</Event></UpgradeLog>

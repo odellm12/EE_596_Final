@@ -1,0 +1,23 @@
+﻿Build started 6/7/2014 21:52:01.
+     1>Project "C:\Users\Mosquito\Desktop\stasm4.1.0_build\minimal2.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "minimal2.dir\Release\minimal2.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Building Custom Rule C:/Users/Mosquito/Desktop/stasm4.1.0/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Mosquito\Desktop\stasm4.1.0_build\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\OpenCV\opencv\build\include /ID:\OpenCV\opencv\build\include\opencv /IC:\Users\Mosquito\Desktop\stasm4.1.0\stasm /IC:\Users\Mosquito\Desktop\stasm4.1.0\stasm\MOD_1 /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D IGTB_EXPORTS /D _WIN32_WINNT=0x0501 /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"minimal2.dir\Release\\" /Fd"minimal2.dir\Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\stasm4.1.0\apps\minimal2.cpp
+         minimal2.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Mosquito\Desktop\stasm4.1.0_build\Release\minimal2.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:D:/OpenCV/opencv/build/x86/vc10/lib /LIBPATH:D:/OpenCV/opencv/build/x86/vc10/lib/Release kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib Release\stasm.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_videostab248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_video248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_ts248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_superres248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_stitching248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_photo248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_ocl248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_objdetect248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_nonfree248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_ml248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_legacy248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_imgproc248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_highgui248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_gpu248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_flann248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_features2d248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_core248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_contrib248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_calib3d248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_nonfree248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_ocl248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_gpu248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_photo248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_objdetect248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_legacy248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_video248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_ml248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_calib3d248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_features2d248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_highgui248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_imgproc248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_flann248.lib D:\OpenCV\opencv\build\x86\vc10\lib\opencv_core248.lib /MANIFEST /ManifestFile:"minimal2.dir\Release\minimal2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:/Users/Mosquito/Desktop/stasm4.1.0_build/Release/minimal2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Mosquito/Desktop/stasm4.1.0_build/Release/minimal2.lib" /MACHINE:X86 minimal2.dir\Release\minimal2.obj  /machine:X86 
+         minimal2.vcxproj -> C:\Users\Mosquito\Desktop\stasm4.1.0_build\Release\minimal2.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Mosquito\Desktop\stasm4.1.0_build\Release\minimal2.exe;#1" /manifest minimal2.dir\Release\minimal2.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "minimal2.dir\Release\minimal2.unsuccessfulbuild".
+         Touching "minimal2.dir\Release\minimal2.lastbuildstate".
+     1>Done Building Project "C:\Users\Mosquito\Desktop\stasm4.1.0_build\minimal2.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.12

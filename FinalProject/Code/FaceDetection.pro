@@ -88,5 +88,23 @@ HEADERS  += mainwindow.h \
     system.h \
     tclhash.h
 
+LIBS += D:\opencv\build\x64\vc15\lib\opencv_calib3d248.lib
+LIBS += D:\opencv\build\x64\vc15\lib\opencv_contrib248.lib
+LIBS += D:\opencv\build\x64\vc15\lib\opencv_core248.lib
+LIBS += D:\opencv\build\x64\vc15\lib\opencv_features2d248.lib
+LIBS += D:\opencv\build\x64\vc15\lib\opencv_flann248.lib
+LIBS += D:\opencv\build\x64\vc15\lib\opencv_gpu248.lib
+LIBS += D:\opencv\build\x64\vc15\lib\opencv_highgui248.lib
+LIBS += D:\opencv\build\x64\vc15\lib\opencv_imgproc248.lib
+LIBS += D:\opencv\build\x64\vc15\lib\opencv_legacy248.lib
+LIBS += D:\opencv\build\x64\vc15\lib\opencv_ml248.lib
+LIBS += D:\opencv\build\x64\vc15\lib\opencv_nonfree248.lib
+LIBS += D:\opencv\build\x64\vc15\lib\opencv_objdetect248.lib
+LIBS += D:\aminegar\Downloads\EE_596_Final\EE_596_Final\FinalProject\Code\stasm.lib
+LIBS += D:\aminegar\Downloads\EE_596_Final\EE_596_Final\FinalProject\Code\stasm4.1.0\vc10\Debug\stasm_lib.obj
+LIBS += D:\aminegar\Downloads\EE_596_Final\EE_596_Final\FinalProject\Code\stasm4.1.0\vc10\Debug\startshape.obj
+
 FORMS    += mainwindow.ui
 INCLUDEPATH += D:\opencv\build\include
+INCLUDEPATH += D:\opencv\build\include\opencv2
+INCLUDEPATH += D:\aminegar\Downloads\EE_596_Final\EE_596_Final\FinalProject\Code\stasm4.1.0\

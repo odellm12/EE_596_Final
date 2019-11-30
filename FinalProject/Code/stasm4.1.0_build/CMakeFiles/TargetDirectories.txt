@@ -1,0 +1,5 @@
+C:/Users/Mosquito/Desktop/stasm4.1.0_build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Mosquito/Desktop/stasm4.1.0_build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Mosquito/Desktop/stasm4.1.0_build/CMakeFiles/minimal.dir
+C:/Users/Mosquito/Desktop/stasm4.1.0_build/CMakeFiles/minimal2.dir
+C:/Users/Mosquito/Desktop/stasm4.1.0_build/CMakeFiles/stasm.dir

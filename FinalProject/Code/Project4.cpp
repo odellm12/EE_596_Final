@@ -16,6 +16,14 @@
 #include <QApplication>
 #include <QDir>
 #include <math.h>
+#include <D:\aminegar\Downloads\opencv\include\opencv\cv.h>
+#include <D:\aminegar\Downloads\opencv\include\opencv2\highgui\highgui.hpp>
+#include <sstream>
+#include <string>
+#include <QApplication>
+#include <stdio.h>
+#include <stdlib.h>
+#include "C:\Git Workspace\EE_596_Final\EE_596_Final\FinalProject\Code\stasm4/stasm_lib.h"
 
 void Informedia_OutputDetection(ClientData data, QImage* image,
     int x, int y, int width, int height,
@@ -26,8 +34,31 @@ void Informedia_SaveDetections(ClientData data, QImage* image,
     int x, int y, int width, int height,
     int level,
     double scale, double output, int orientation);
+//NOT USED FOR NOW
+void FindFaces(QImage inImage, double minScale, double maxScale, QImage *displayImage)
+{
+    int w = inImage.width();
+    int h = inImage.height();
+    double scaleMulti = 1.26;
+    double scale;
+    int r, c;
 
+    // Serach in scale space
+    for(scale=minScale;scale<maxScale;scale*=scaleMulti)
+    {
+        // Find size of bounding box
+        int faceSize = (int) scale;
+        int stepSize = max(2, faceSize/8);
 
+        // For every possible position
+        for(r=0;r<h-faceSize;r+=stepSize)
+            for(c=0;c<w-faceSize;c+=stepSize)
+            {
+                // call the Stasm Function
+                //*********************TODO**********************************
+            }
+    }
+}
 /***********************************************************************
   This is the only file you need to change for your assignment. The
   other files control the UI (in case you want to make changes.)
@@ -192,7 +223,7 @@ void MainWindow::RowleyFaceDetection(QImage *image, int num)
 */
 // Global variables to access image width and height
 {
-    const int minSize(0); // Where is this coming from ? TODO
+ /*   const int minSize(0); // Where is this coming from ? TODO
     const int maxSize(qMin(imageWidth, imageHeight));
     const int minX(0);
     const int maxX(imageWidth);
@@ -308,6 +339,38 @@ void MainWindow::RowleyFaceDetection(QImage *image, int num)
         delete mainmask;
         delete levelmask;
         delete image;
+        */
+    static const char* path = "D:\aminegar\Pictures\My-Passport-Pictures\cell phone\IMG_0030.JPG"; //UPDATE LATER TO THE qimage saved path!
+    cv::Mat_<unsigned char> img(cv::imread(path, cv::IMREAD_GRAYSCALE));
+
+    if (!img.data)
+    {
+        printf("Cannot load %s\n", path);
+        exit(1);
+    }
+
+    int foundface;
+    float landmarks[2 * stasm_NLANDMARKS]; // x,y coords
+
+    if (!stasm_search_single(&foundface, landmarks,
+                             (char*)img.data, img.cols, img.rows, path, "../data"))
+    {
+        printf("Error in stasm_search_single: %s\n", stasm_lasterr());
+        exit(1);
+    }
+
+    if (!foundface)
+         printf("No face found in %s\n", path);
+    else
+    {
+        // draw the landmarks on the image as white dots
+        stasm_force_points_into_image(landmarks, img.cols, img.rows);
+        for (int i = 0; i < stasm_NLANDMARKS; i++)
+            img(cvRound(landmarks[i*2+1]), cvRound(landmarks[i*2])) = 255;
+    }
+
+    cv::imshow("stasm minimal", img);
+    cv::waitKey();
 }
 
 /**************************************************
