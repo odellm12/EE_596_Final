@@ -1,4 +1,4 @@
-#include "context.h"
+#include "C:\Git Workspace\ComputerVision-master\Algorithms\Common/Context.h"
 
 QDataStream& operator>>(QDataStream& Stream, AlgContext& Value)
 {

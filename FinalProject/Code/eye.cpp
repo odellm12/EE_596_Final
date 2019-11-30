@@ -18,7 +18,9 @@
 #endif
 
 #include "img.h"
-#include "myhebp.h"
+#include "C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\myhebp.hpp"
+#include "fast2.h"
+
 #include "eye.h"
 //#include "normface.hpp"
 #include "system.h"

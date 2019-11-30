@@ -7,6 +7,7 @@
 #include "search.h"
 #include "follow.h"
 #include "structs.h"
+#include "C:\Git Workspace\ComputerVision-master/Algorithms/Detection/Rowley/detect/im_face.cc"
 #include "context.h"
 #include <QtGui>
 #include <QByteArray>
@@ -306,11 +307,7 @@ void MainWindow::RowleyFaceDetection(QImage *image, int num)
         delete[] imagePyramid;
         delete mainmask;
         delete levelmask;
-
-        image->buffer = NULL;
         delete image;
-        return foundObjs;
-    }
 }
 
 /**************************************************

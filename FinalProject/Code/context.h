@@ -1,27 +1,58 @@
-#ifndef CONTEXT_H
-#define CONTEXT_H
-#ifndef ALGORITHMS_COMMON_CONTEXT_H
-#define ALGORITHMS_COMMON_CONTEXT_H
+#ifndef ALGORITHMS_DETECTION_COMMON_CONTEXT_H
+#define ALGORITHMS_DETECTION_COMMON_CONTEXT_H
 
-#include "context.h"
-#include "../Vectorization/Common/Context.h"
-#include "Algorithms.h"
+#include "C:\Git Workspace\ComputerVision-master\Algorithms\Common/Algorithms.h"
 
-#include <QSize>
-#include <QString>
+#include <QMultiMap>
+#include <QMap>
+#include <QPoint>
+#include <QRect>
+#include <QDataStream>
 
 namespace algorithms
 {
-    struct ContextType
+    namespace detection
     {
-        AlgDetInOut Detection;
-        AlgVecInOut Vectorization;
+        struct Input
+        {
+            QString HaarCascadeClassifierFileName;
+            qreal ScaleFactor;
+            QSize MinObjectSize;
+        };
+
+        enum PointType
+        {
+            LeftEyePoint,
+            RightEyePoint
+        };
+        Q_DECLARE_FLAGS(PointsType, PointType)
+
+            typedef QMap<PointsType, QPoint> PointsMap;
+
+        struct Output
+        {
+            QRect Rectangle;
+            PointsMap Points;
+
+            Output& operator/=(const qreal& divisor);
+        };
+    }
+
+    struct Detection
+    {
+        detection::Input In;
+        QMultiMap<AlgType, detection::Output> Out;
     };
 }
 
-typedef algorithms::ContextType AlgContext;
+typedef algorithms::detection::Input AlgDetInput;
+typedef algorithms::detection::Output AlgDetOutput;
+typedef QMultiMap<AlgType, AlgDetOutput> AlgDetOutputMap;
+typedef algorithms::Detection AlgDetInOut;
 
-QDataStream& operator>>(QDataStream& Stream, AlgContext& Value);
-QDataStream& operator<<(QDataStream& Stream, const AlgContext& Value);
+AlgDetOutputMap getMirroredDetectors(const AlgDetOutputMap& Detectors, const int& ImageWidth);
 
-#endif // ALGORITHMS_COMMON_CONTEXT_H
+QDataStream& operator>>(QDataStream& Stream, AlgDetInOut& Value);
+QDataStream& operator<<(QDataStream& Stream, const AlgDetInOut& Value);
+
+#endif // ALGORITHMS_DETECTION_COMMON_CONTEXT_H

@@ -12,7 +12,7 @@
 #include "structs.h"
 
 #include "context.h"
-#include "../../../Common/Frame/Frame.h"
+#include "C:\Git Workspace\ComputerVision-master\Common\Frame/Frame.h"
 
 #include <QList>
 #include <QSize>

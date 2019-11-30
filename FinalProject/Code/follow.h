@@ -1,6 +1,11 @@
 #ifndef FOLLOW_H
 #define FOLLOW_H
-
+#include <QtGui>
+#include <QByteArray>
+#include <QSize>
+#include <QList>
+#include <QApplication>
+#include <QDir>
 
 #include "search.h"
 #include "mat.h"
