@@ -1,14 +1,13 @@
 #include "mainwindow.h"
 #include "math.h"
 #include "ui_mainwindow.h"
-#include "img.h"
-#include "mat.h"
-#include "list.h"
-#include "search.h"
-#include "follow.h"
-#include "structs.h"
-#include "C:\Git Workspace\ComputerVision-master/Algorithms/Detection/Rowley/detect/im_face.cc"
-#include "context.h"
+//#include "img.h"
+//#include "mat.h"
+//#include "list.h"
+//#include "follow.h"
+//#include "structs.h"
+//#include "C:\Git Workspace\ComputerVision-master/Algorithms/Detection/Rowley/detect/im_face.cc"
+//#include "context.h"
 #include <QtGui>
 #include <QByteArray>
 #include <QSize>
@@ -16,24 +15,24 @@
 #include <QApplication>
 #include <QDir>
 #include <math.h>
-#include <D:\aminegar\Downloads\opencv\include\opencv\cv.h>
-#include <D:\aminegar\Downloads\opencv\include\opencv2\highgui\highgui.hpp>
+#include <opencv.hpp>
+#include <highgui.hpp>
 #include <sstream>
 #include <string>
 #include <QApplication>
 #include <stdio.h>
 #include <stdlib.h>
-#include "C:\Git Workspace\EE_596_Final\EE_596_Final\FinalProject\Code\stasm4/stasm_lib.h"
+#include "stasm4/stasm_lib.h"
 
-void Informedia_OutputDetection(ClientData data, QImage* image,
-    int x, int y, int width, int height,
-    int level,
-    double scale, double output, int orientation);
+//void Informedia_OutputDetection(ClientData data, QImage* image,
+//    int x, int y, int width, int height,
+//    int level,
+//    double scale, double output, int orientation);
 
-void Informedia_SaveDetections(ClientData data, QImage* image,
-    int x, int y, int width, int height,
-    int level,
-    double scale, double output, int orientation);
+//void Informedia_SaveDetections(ClientData data, QImage* image,
+//    int x, int y, int width, int height,
+//    int level,
+//    double scale, double output, int orientation);
 //NOT USED FOR NOW
 void FindFaces(QImage inImage, double minScale, double maxScale, QImage *displayImage)
 {
@@ -340,36 +339,41 @@ void MainWindow::RowleyFaceDetection(QImage *image, int num)
         delete levelmask;
         delete image;
         */
+
+
     static const char* path = "D:\aminegar\Pictures\My-Passport-Pictures\cell phone\IMG_0030.JPG"; //UPDATE LATER TO THE qimage saved path!
     cv::Mat_<unsigned char> img(cv::imread(path, cv::IMREAD_GRAYSCALE));
-
-    if (!img.data)
-    {
-        printf("Cannot load %s\n", path);
-        exit(1);
-    }
-
+    //cv::cvtColor(img, img, CV_BGR2GRAY);//CV_BGR2RGB
     int foundface;
-    float landmarks[2 * stasm_NLANDMARKS]; // x,y coords
+    float landmarks[2 * stasm_NLANDMARKS]; // x,y coords (note the 2)
 
-    if (!stasm_search_single(&foundface, landmarks,
-                             (char*)img.data, img.cols, img.rows, path, "../data"))
+    int nfaces = 0;
+    while (1)
     {
-        printf("Error in stasm_search_single: %s\n", stasm_lasterr());
-        exit(1);
-    }
+        if (!stasm_search_auto(&foundface, landmarks))
+            // error("stasm_search_auto failed: ", stasm_lasterr());
 
-    if (!foundface)
-         printf("No face found in %s\n", path);
-    else
-    {
+        if (!foundface)
+            break;      // note break
+
+        // for demonstration, convert from Stasm 77 points to XM2VTS 68 points
+        stasm_convert_shape(landmarks, 68);
+
         // draw the landmarks on the image as white dots
         stasm_force_points_into_image(landmarks, img.cols, img.rows);
         for (int i = 0; i < stasm_NLANDMARKS; i++)
             img(cvRound(landmarks[i*2+1]), cvRound(landmarks[i*2])) = 255;
+
+        nfaces++;
     }
 
-    cv::imshow("stasm minimal", img);
+    QImage qimgOriginal((uchar*)img.data, img.cols, img.rows, img.step, QImage::Format_RGB32);
+    displayImage = QImage(qimgOriginal); //Do I need this???
+   //For testing
+    printf("%s: %d face(s)\n", path, nfaces);
+    fflush(stdout);
+    cv::imwrite("minimal2.bmp", img);
+    cv::imshow("stasm minimal2", img);
     cv::waitKey();
 }
 

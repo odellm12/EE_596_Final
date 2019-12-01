@@ -29,11 +29,8 @@ static const char* const STASM_VERSION = "4.1.0"
 // opencv2\flann\lsh_table.h(417) : warning C4267: conversion from 'size_t' to ...
 #pragma warning(disable:4267)
 #endif
-
-#include "opencv/cv.h"
-////////////////////////
-#include "opencv/highgui.h"
-////////////////////////
+#include <opencv.hpp>
+#include <highgui.hpp>
 
 #if _MSC_VER >= 1200
 #pragma warning(default:4996) // re-enable the warnings disabled above

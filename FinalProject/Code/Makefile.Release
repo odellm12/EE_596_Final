@@ -48,244 +48,430 @@ OBJECTS_DIR   = release
 ####### Files
 
 SOURCES       = main.cpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Plugins\Databases\Cache\Detectors.cpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Common\Context.cpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\eye.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\faces.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\fast2.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\fft.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\follow.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\gif.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\im_face.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\img.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\ip.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\just.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\kdoi.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\kmain.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\list.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\mat.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\myhebp.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\nn.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\search.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\system.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\tclHash.c \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\tool.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\vote.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Common\Frame\Frame.cpp \
 		Project4.cpp \
-		context.cpp \
-		eye.cpp \
-		fast2.cpp \
-		follow.cpp \
-		img.cpp \
 		mainwindow.cpp \
 		mat.cpp \
-		search.cpp \
-		system.cpp \
+		stasm4.1.0\stasm4\MOD_1\facedet.cpp \
+		stasm4.1.0\stasm4\MOD_1\initasm.cpp \
+		stasm4.1.0\stasm4\asm.cpp \
+		stasm4.1.0\stasm4\classicdesc.cpp \
+		stasm4.1.0\stasm4\convshape.cpp \
+		stasm4.1.0\stasm4\err.cpp \
+		stasm4.1.0\stasm4\eyedet.cpp \
+		stasm4.1.0\stasm4\eyedist.cpp \
+		stasm4.1.0\stasm4\faceroi.cpp \
+		stasm4.1.0\stasm4\hat.cpp \
+		stasm4.1.0\stasm4\hatdesc.cpp \
+		stasm4.1.0\stasm4\landmarks.cpp \
+		stasm4.1.0\stasm4\misc.cpp \
+		stasm4.1.0\stasm4\pinstart.cpp \
+		stasm4.1.0\stasm4\print.cpp \
+		stasm4.1.0\stasm4\shape17.cpp \
+		stasm4.1.0\stasm4\shapehacks.cpp \
+		stasm4.1.0\stasm4\shapemod.cpp \
+		stasm4.1.0\stasm4\startshape.cpp \
+		stasm4.1.0\stasm4\stasm.cpp \
+		stasm4.1.0\stasm4\stasm_lib.cpp \
 		tclhash.cpp release\moc_mainwindow.cpp
 OBJECTS       = release/main.o \
-		release/Git.o \
-		release/Detectors.o \
-		release/Git.o \
-		release/Context.o \
-		release/Git.o \
-		release/eye.o \
-		release/Git.o \
-		release/faces.o \
-		release/Git.o \
-		release/fast2.o \
-		release/Git.o \
-		release/fft.o \
-		release/Git.o \
-		release/follow.o \
-		release/Git.o \
-		release/gif.o \
-		release/Git.o \
-		release/im_face.o \
-		release/Git.o \
-		release/img.o \
-		release/Git.o \
-		release/ip.o \
-		release/Git.o \
-		release/just.o \
-		release/Git.o \
-		release/kdoi.o \
-		release/Git.o \
-		release/kmain.o \
-		release/Git.o \
-		release/list.o \
-		release/Git.o \
-		release/mat.o \
-		release/Git.o \
-		release/myhebp.o \
-		release/Git.o \
-		release/nn.o \
-		release/Git.o \
-		release/search.o \
-		release/Git.o \
-		release/system.o \
-		release/Git.o \
-		release/tclHash.o \
-		release/Git.o \
-		release/tool.o \
-		release/Git.o \
-		release/vote.o \
-		release/Git.o \
-		release/Frame.o \
 		release/Project4.o \
-		release/context.o \
-		release/eye.o \
-		release/fast2.o \
-		release/follow.o \
-		release/img.o \
 		release/mainwindow.o \
 		release/mat.o \
-		release/search.o \
-		release/system.o \
+		release/facedet.o \
+		release/initasm.o \
+		release/asm.o \
+		release/classicdesc.o \
+		release/convshape.o \
+		release/err.o \
+		release/eyedet.o \
+		release/eyedist.o \
+		release/faceroi.o \
+		release/hat.o \
+		release/hatdesc.o \
+		release/landmarks.o \
+		release/misc.o \
+		release/pinstart.o \
+		release/print.o \
+		release/shape17.o \
+		release/shapehacks.o \
+		release/shapemod.o \
+		release/startshape.o \
+		release/stasm.o \
+		release/stasm_lib.o \
 		release/tclhash.o \
 		release/moc_mainwindow.o
 
-DIST          =  mainwindow.h \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Plugins\Databases\Cache\Detectors.h \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Common\Context.h \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\eye.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\faces.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\fast2.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\fft.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\follow.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\gif.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\img.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\ip.h \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\just.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\kdoi.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\list.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\maincore.h \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\mat.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\myhebp.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\nn.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\search.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\system.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\tclHash.h \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\tool.h \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\vote.hpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Common\Frame\Frame.h \
+DIST          = stasm4.1.0/stasm4/MOD_1/README.txt \
+		stasm4.1.0/stasm4/MOD_1/log/tasm.log mainwindow.h \
 		context.h \
 		detect.h \
-		eye.h \
-		fast2.h \
-		follow.h \
-		img.h \
+		frame.h \
 		list.h \
 		mat.h \
 		search.h \
+		stasm4.1.0\stasm4\MOD_1\facedet.h \
+		stasm4.1.0\stasm4\MOD_1\initasm.h \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p00_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p01_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p02_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p03_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p04_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p05_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p06_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p07_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p08_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p09_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p10_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p11_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p12_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p13_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p14_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p15_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p16_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p17_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p18_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p19_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p20_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p21_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p22_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p23_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p24_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p25_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p26_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p27_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p28_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p29_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p30_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p31_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p32_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p33_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p34_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p35_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p36_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p37_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p38_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p39_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p40_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p41_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p42_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p43_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p44_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p45_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p46_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p47_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p48_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p49_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p50_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p51_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p52_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p53_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p54_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p55_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p56_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p57_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p58_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p59_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p60_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p61_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p62_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p63_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p64_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p65_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p66_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p67_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p68_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p69_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p70_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p71_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p72_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p73_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p74_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p75_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p76_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p00_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p01_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p02_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p03_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p04_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p05_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p06_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p07_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p08_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p09_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p10_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p11_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p12_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p13_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p14_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p15_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p16_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p17_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p18_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p19_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p20_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p21_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p22_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p23_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p24_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p25_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p26_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p27_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p28_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p29_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p30_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p31_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p32_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p33_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p34_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p35_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p36_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p37_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p38_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p39_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p40_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p41_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p42_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p43_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p44_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p45_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p46_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p47_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p48_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p49_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p50_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p51_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p52_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p53_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p54_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p55_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p56_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p57_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p58_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p59_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p60_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p61_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p62_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p63_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p64_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p65_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p66_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p67_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p68_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p69_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p70_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p71_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p72_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p73_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p74_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p75_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p76_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p00_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p01_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p02_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p03_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p04_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p05_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p06_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p07_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p08_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p09_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p10_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p11_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p12_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p13_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p14_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p15_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p16_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p17_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p18_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p19_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p20_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p21_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p22_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p23_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p24_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p25_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p26_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p27_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p28_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p29_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p30_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p31_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p32_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p33_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p34_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p35_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p36_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p37_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p38_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p39_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p40_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p41_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p42_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p43_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p44_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p45_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p46_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p47_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p48_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p49_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p50_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p51_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p52_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p53_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p54_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p55_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p56_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p57_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p58_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p59_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p60_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p61_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p62_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p63_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p64_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p65_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p66_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p67_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p68_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p69_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p70_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p71_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p72_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p73_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p74_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p75_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p76_hat.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p00_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p01_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p02_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p03_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p04_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p05_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p06_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p07_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p08_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p09_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p10_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p11_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p12_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p13_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p14_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p15_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p16_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p17_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p18_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p19_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p20_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p21_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p22_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p23_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p24_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p25_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p26_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p27_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p28_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p29_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p30_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p31_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p32_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p33_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p34_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p35_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p36_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p37_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p38_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p39_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p40_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p41_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p42_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p43_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p44_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p45_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p46_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p47_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p48_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p49_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p50_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p51_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p52_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p53_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p54_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p55_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p56_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p57_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p58_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p59_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p60_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p61_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p62_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p63_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p64_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p65_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p66_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p67_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p68_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p69_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p70_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p71_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p72_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p73_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p74_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p75_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p76_classic.mh \
+		stasm4.1.0\stasm4\MOD_1\mh\yaw00_shapemodel.mh \
+		stasm4.1.0\stasm4\asm.h \
+		stasm4.1.0\stasm4\atface.h \
+		stasm4.1.0\stasm4\basedesc.h \
+		stasm4.1.0\stasm4\classicdesc.h \
+		stasm4.1.0\stasm4\convshape.h \
+		stasm4.1.0\stasm4\err.h \
+		stasm4.1.0\stasm4\eyedet.h \
+		stasm4.1.0\stasm4\eyedist.h \
+		stasm4.1.0\stasm4\faceroi.h \
+		stasm4.1.0\stasm4\hat.h \
+		stasm4.1.0\stasm4\hatdesc.h \
+		stasm4.1.0\stasm4\landmarks.h \
+		stasm4.1.0\stasm4\landtab_muct77.h \
+		stasm4.1.0\stasm4\misc.h \
+		stasm4.1.0\stasm4\pinstart.h \
+		stasm4.1.0\stasm4\print.h \
+		stasm4.1.0\stasm4\shape17.h \
+		stasm4.1.0\stasm4\shapehacks.h \
+		stasm4.1.0\stasm4\shapemod.h \
+		stasm4.1.0\stasm4\startshape.h \
+		stasm4.1.0\stasm4\stasm.h \
+		stasm4.1.0\stasm4\stasm_landmarks.h \
+		stasm4.1.0\stasm4\stasm_lib.h \
+		stasm4.1.0\stasm4\stasm_lib_ext.h \
 		structs.h \
 		system.h \
 		tclhash.h main.cpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Plugins\Databases\Cache\Detectors.cpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Common\Context.cpp \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\eye.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\faces.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\fast2.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\fft.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\follow.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\gif.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\im_face.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\img.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\ip.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\just.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\kdoi.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\kmain.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\list.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\mat.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\myhebp.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\nn.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\search.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\system.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\tclHash.c \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\tool.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\vote.cc \
-		+=C:\Git \
-		Workspace\ComputerVision-master\Common\Frame\Frame.cpp \
 		Project4.cpp \
-		context.cpp \
-		eye.cpp \
-		fast2.cpp \
-		follow.cpp \
-		img.cpp \
 		mainwindow.cpp \
 		mat.cpp \
-		search.cpp \
-		system.cpp \
+		stasm4.1.0\stasm4\MOD_1\facedet.cpp \
+		stasm4.1.0\stasm4\MOD_1\initasm.cpp \
+		stasm4.1.0\stasm4\asm.cpp \
+		stasm4.1.0\stasm4\classicdesc.cpp \
+		stasm4.1.0\stasm4\convshape.cpp \
+		stasm4.1.0\stasm4\err.cpp \
+		stasm4.1.0\stasm4\eyedet.cpp \
+		stasm4.1.0\stasm4\eyedist.cpp \
+		stasm4.1.0\stasm4\faceroi.cpp \
+		stasm4.1.0\stasm4\hat.cpp \
+		stasm4.1.0\stasm4\hatdesc.cpp \
+		stasm4.1.0\stasm4\landmarks.cpp \
+		stasm4.1.0\stasm4\misc.cpp \
+		stasm4.1.0\stasm4\pinstart.cpp \
+		stasm4.1.0\stasm4\print.cpp \
+		stasm4.1.0\stasm4\shape17.cpp \
+		stasm4.1.0\stasm4\shapehacks.cpp \
+		stasm4.1.0\stasm4\shapemod.cpp \
+		stasm4.1.0\stasm4\startshape.cpp \
+		stasm4.1.0\stasm4\stasm.cpp \
+		stasm4.1.0\stasm4\stasm_lib.cpp \
 		tclhash.cpp
 QMAKE_TARGET  = FaceDetection
 DESTDIR        = release\ #avoid trailing-slash linebreak
@@ -306,10 +492,10 @@ qmake: FORCE
 qmake_all: FORCE
 
 dist:
-	$(ZIP) FaceDetection.zip $(SOURCES) $(DIST) FaceDetection.pro C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\spec_pre.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\qdevice.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\device_config.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\common\sanitize.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\common\gcc-base.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\common\g++-base.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\common\angle.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\win32\windows_vulkan_sdk.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\common\windows-vulkan.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\common\g++-win32.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\common\windows-desktop.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\qconfig.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3danimation.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3danimation_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dcore.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dcore_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dextras.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dextras_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dinput.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dinput_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dlogic.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dlogic_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquick.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquick_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickanimation.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickanimation_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickextras.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickextras_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickinput.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickinput_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickrender.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickrender_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickscene2d.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickscene2d_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3drender.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3drender_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_accessibility_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_axbase.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_axbase_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_axcontainer.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_axcontainer_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_axserver.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_axserver_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_bluetooth.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_bluetooth_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_bodymovin_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_bootstrap_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_charts.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_charts_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_concurrent.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_concurrent_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_core.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_core_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_datavisualization.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_datavisualization_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_dbus.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_dbus_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_designer.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_designer_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_designercomponents_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_edid_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_egl_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_eventdispatcher_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_fb_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_fontdatabase_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_gamepad.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_gamepad_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_gui.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_gui_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_help.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_help_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_location.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_location_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_multimedia.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_multimedia_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_multimediawidgets.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_network.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_network_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_networkauth.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_networkauth_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_nfc.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_nfc_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_opengl.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_opengl_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_openglextensions.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_openglextensions_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_packetprotocol_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_platformcompositor_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_positioning.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_positioning_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_positioningquick.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_positioningquick_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_printsupport.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_printsupport_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_purchasing.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_purchasing_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_qml.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_qml_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_qmldebug_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_qmldevtools_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_qmltest.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_qmltest_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quick.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quick_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quickcontrols2.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quickparticles_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quickshapes_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quicktemplates2.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quickwidgets.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quickwidgets_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_remoteobjects.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_remoteobjects_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_repparser.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_repparser_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_script.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_script_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_scripttools.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_scripttools_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_scxml.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_scxml_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_sensors.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_sensors_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_serialbus.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_serialbus_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_serialport.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_serialport_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_sql.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_sql_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_svg.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_svg_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_testlib.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_testlib_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_texttospeech.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_texttospeech_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_theme_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_uiplugin.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_uitools.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_uitools_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_virtualkeyboard.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_virtualkeyboard_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_vulkan_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_webchannel.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_webchannel_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_websockets.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_websockets_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_widgets.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_widgets_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_windowsuiautomation_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_winextras.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_winextras_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_xml.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_xml_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_xmlpatterns.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_xmlpatterns_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\qt_functions.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\qt_config.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\win32-g++\qmake.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\spec_post.prf .qmake.stash C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\exclusive_builds.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\toolchain.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\default_pre.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\win32\default_pre.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\resolve_config.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\exclusive_builds_post.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\default_post.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\build_pass.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\resources.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\qtquickcompiler.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\precompile_header.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\warn_on.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\qt.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\moc.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\win32\opengl.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\uic.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\qmake_use.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\file_copies.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\win32\windows.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\testcase_targets.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\exceptions.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\yacc.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\lex.prf FaceDetection.pro C:\Qt\Qt5.13.1\5.13.1\mingw73_64\lib\Qt5Widgets.prl C:\Qt\Qt5.13.1\5.13.1\mingw73_64\lib\Qt5Gui.prl C:\Qt\Qt5.13.1\5.13.1\mingw73_64\lib\Qt5Core.prl C:\Qt\Qt5.13.1\5.13.1\mingw73_64\lib\qtmain.prl      C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\data\dummy.cpp mainwindow.h +=C:\Git Workspace\ComputerVision-master\Plugins\Databases\Cache\Detectors.h +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Common\Context.h +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\eye.hpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\faces.hpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\fast2.hpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\fft.hpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\follow.hpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\gif.hpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\img.hpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\ip.h +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\just.hpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\kdoi.hpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\list.hpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\maincore.h +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\mat.hpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\myhebp.hpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\nn.hpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\search.hpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\system.hpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\tclHash.h +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\tool.h +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\vote.hpp +=C:\Git Workspace\ComputerVision-master\Common\Frame\Frame.h context.h detect.h eye.h fast2.h follow.h img.h list.h mat.h search.h structs.h system.h tclhash.h  main.cpp +=C:\Git Workspace\ComputerVision-master\Plugins\Databases\Cache\Detectors.cpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Common\Context.cpp +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\eye.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\faces.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\fast2.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\fft.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\follow.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\gif.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\im_face.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\img.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\ip.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\just.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\kdoi.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\kmain.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\list.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\mat.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\myhebp.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\nn.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\search.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\system.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\tclHash.c +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\tool.cc +=C:\Git Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\vote.cc +=C:\Git Workspace\ComputerVision-master\Common\Frame\Frame.cpp Project4.cpp context.cpp eye.cpp fast2.cpp follow.cpp img.cpp mainwindow.cpp mat.cpp search.cpp system.cpp tclhash.cpp mainwindow.ui    
+	$(ZIP) FaceDetection.zip $(SOURCES) $(DIST) FaceDetection.pro C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\spec_pre.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\qdevice.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\device_config.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\common\sanitize.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\common\gcc-base.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\common\g++-base.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\common\angle.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\win32\windows_vulkan_sdk.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\common\windows-vulkan.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\common\g++-win32.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\common\windows-desktop.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\qconfig.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3danimation.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3danimation_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dcore.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dcore_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dextras.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dextras_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dinput.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dinput_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dlogic.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dlogic_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquick.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquick_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickanimation.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickanimation_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickextras.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickextras_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickinput.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickinput_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickrender.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickrender_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickscene2d.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3dquickscene2d_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3drender.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_3drender_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_accessibility_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_axbase.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_axbase_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_axcontainer.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_axcontainer_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_axserver.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_axserver_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_bluetooth.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_bluetooth_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_bodymovin_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_bootstrap_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_charts.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_charts_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_concurrent.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_concurrent_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_core.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_core_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_datavisualization.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_datavisualization_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_dbus.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_dbus_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_designer.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_designer_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_designercomponents_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_edid_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_egl_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_eventdispatcher_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_fb_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_fontdatabase_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_gamepad.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_gamepad_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_gui.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_gui_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_help.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_help_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_location.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_location_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_multimedia.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_multimedia_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_multimediawidgets.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_network.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_network_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_networkauth.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_networkauth_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_nfc.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_nfc_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_opengl.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_opengl_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_openglextensions.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_openglextensions_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_packetprotocol_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_platformcompositor_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_positioning.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_positioning_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_positioningquick.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_positioningquick_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_printsupport.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_printsupport_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_purchasing.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_purchasing_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_qml.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_qml_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_qmldebug_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_qmldevtools_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_qmltest.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_qmltest_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quick.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quick_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quickcontrols2.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quickparticles_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quickshapes_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quicktemplates2.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quickwidgets.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_quickwidgets_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_remoteobjects.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_remoteobjects_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_repparser.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_repparser_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_script.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_script_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_scripttools.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_scripttools_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_scxml.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_scxml_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_sensors.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_sensors_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_serialbus.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_serialbus_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_serialport.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_serialport_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_sql.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_sql_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_svg.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_svg_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_testlib.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_testlib_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_texttospeech.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_texttospeech_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_theme_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_uiplugin.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_uitools.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_uitools_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_virtualkeyboard.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_virtualkeyboard_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_vulkan_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_webchannel.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_webchannel_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_websockets.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_websockets_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_widgets.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_widgets_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_windowsuiautomation_support_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_winextras.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_winextras_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_xml.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_xml_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_xmlpatterns.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\modules\qt_lib_xmlpatterns_private.pri C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\qt_functions.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\qt_config.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\win32-g++\qmake.conf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\spec_post.prf .qmake.stash C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\exclusive_builds.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\toolchain.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\default_pre.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\win32\default_pre.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\resolve_config.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\exclusive_builds_post.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\default_post.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\build_pass.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\resources.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\qtquickcompiler.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\precompile_header.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\warn_on.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\qt.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\moc.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\win32\opengl.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\uic.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\qmake_use.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\file_copies.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\win32\windows.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\testcase_targets.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\exceptions.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\yacc.prf C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\lex.prf FaceDetection.pro C:\Qt\Qt5.13.1\5.13.1\mingw73_64\lib\Qt5Widgets.prl C:\Qt\Qt5.13.1\5.13.1\mingw73_64\lib\Qt5Gui.prl C:\Qt\Qt5.13.1\5.13.1\mingw73_64\lib\Qt5Core.prl C:\Qt\Qt5.13.1\5.13.1\mingw73_64\lib\qtmain.prl      C:\Qt\Qt5.13.1\5.13.1\mingw73_64\mkspecs\features\data\dummy.cpp mainwindow.h context.h detect.h frame.h list.h mat.h search.h stasm4.1.0\stasm4\MOD_1\facedet.h stasm4.1.0\stasm4\MOD_1\initasm.h stasm4.1.0\stasm4\MOD_1\mh\yaw00.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p00_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p01_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p02_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p03_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p04_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p05_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p06_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p07_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p08_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p09_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p10_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p11_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p12_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p13_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p14_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p15_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p16_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p17_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p18_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p19_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p20_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p21_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p22_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p23_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p24_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p25_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p26_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p27_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p28_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p29_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p30_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p31_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p32_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p33_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p34_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p35_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p36_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p37_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p38_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p39_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p40_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p41_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p42_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p43_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p44_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p45_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p46_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p47_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p48_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p49_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p50_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p51_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p52_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p53_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p54_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p55_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p56_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p57_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p58_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p59_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p60_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p61_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p62_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p63_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p64_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p65_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p66_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p67_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p68_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p69_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p70_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p71_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p72_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p73_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p74_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p75_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev0_p76_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p00_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p01_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p02_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p03_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p04_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p05_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p06_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p07_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p08_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p09_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p10_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p11_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p12_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p13_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p14_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p15_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p16_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p17_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p18_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p19_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p20_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p21_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p22_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p23_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p24_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p25_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p26_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p27_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p28_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p29_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p30_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p31_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p32_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p33_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p34_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p35_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p36_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p37_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p38_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p39_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p40_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p41_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p42_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p43_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p44_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p45_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p46_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p47_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p48_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p49_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p50_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p51_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p52_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p53_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p54_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p55_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p56_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p57_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p58_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p59_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p60_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p61_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p62_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p63_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p64_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p65_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p66_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p67_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p68_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p69_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p70_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p71_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p72_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p73_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p74_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p75_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev1_p76_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p00_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p01_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p02_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p03_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p04_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p05_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p06_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p07_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p08_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p09_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p10_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p11_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p12_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p13_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p14_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p15_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p16_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p17_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p18_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p19_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p20_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p21_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p22_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p23_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p24_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p25_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p26_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p27_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p28_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p29_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p30_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p31_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p32_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p33_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p34_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p35_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p36_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p37_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p38_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p39_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p40_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p41_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p42_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p43_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p44_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p45_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p46_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p47_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p48_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p49_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p50_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p51_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p52_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p53_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p54_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p55_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p56_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p57_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p58_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p59_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p60_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p61_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p62_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p63_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p64_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p65_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p66_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p67_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p68_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p69_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p70_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p71_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p72_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p73_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p74_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p75_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev2_p76_hat.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p00_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p01_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p02_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p03_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p04_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p05_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p06_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p07_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p08_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p09_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p10_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p11_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p12_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p13_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p14_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p15_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p16_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p17_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p18_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p19_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p20_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p21_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p22_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p23_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p24_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p25_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p26_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p27_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p28_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p29_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p30_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p31_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p32_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p33_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p34_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p35_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p36_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p37_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p38_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p39_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p40_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p41_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p42_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p43_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p44_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p45_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p46_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p47_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p48_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p49_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p50_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p51_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p52_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p53_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p54_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p55_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p56_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p57_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p58_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p59_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p60_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p61_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p62_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p63_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p64_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p65_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p66_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p67_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p68_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p69_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p70_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p71_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p72_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p73_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p74_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p75_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_lev3_p76_classic.mh stasm4.1.0\stasm4\MOD_1\mh\yaw00_shapemodel.mh stasm4.1.0\stasm4\asm.h stasm4.1.0\stasm4\atface.h stasm4.1.0\stasm4\basedesc.h stasm4.1.0\stasm4\classicdesc.h stasm4.1.0\stasm4\convshape.h stasm4.1.0\stasm4\err.h stasm4.1.0\stasm4\eyedet.h stasm4.1.0\stasm4\eyedist.h stasm4.1.0\stasm4\faceroi.h stasm4.1.0\stasm4\hat.h stasm4.1.0\stasm4\hatdesc.h stasm4.1.0\stasm4\landmarks.h stasm4.1.0\stasm4\landtab_muct77.h stasm4.1.0\stasm4\misc.h stasm4.1.0\stasm4\pinstart.h stasm4.1.0\stasm4\print.h stasm4.1.0\stasm4\shape17.h stasm4.1.0\stasm4\shapehacks.h stasm4.1.0\stasm4\shapemod.h stasm4.1.0\stasm4\startshape.h stasm4.1.0\stasm4\stasm.h stasm4.1.0\stasm4\stasm_landmarks.h stasm4.1.0\stasm4\stasm_lib.h stasm4.1.0\stasm4\stasm_lib_ext.h structs.h system.h tclhash.h  main.cpp Project4.cpp mainwindow.cpp mat.cpp stasm4.1.0\stasm4\MOD_1\facedet.cpp stasm4.1.0\stasm4\MOD_1\initasm.cpp stasm4.1.0\stasm4\asm.cpp stasm4.1.0\stasm4\classicdesc.cpp stasm4.1.0\stasm4\convshape.cpp stasm4.1.0\stasm4\err.cpp stasm4.1.0\stasm4\eyedet.cpp stasm4.1.0\stasm4\eyedist.cpp stasm4.1.0\stasm4\faceroi.cpp stasm4.1.0\stasm4\hat.cpp stasm4.1.0\stasm4\hatdesc.cpp stasm4.1.0\stasm4\landmarks.cpp stasm4.1.0\stasm4\misc.cpp stasm4.1.0\stasm4\pinstart.cpp stasm4.1.0\stasm4\print.cpp stasm4.1.0\stasm4\shape17.cpp stasm4.1.0\stasm4\shapehacks.cpp stasm4.1.0\stasm4\shapemod.cpp stasm4.1.0\stasm4\startshape.cpp stasm4.1.0\stasm4\stasm.cpp stasm4.1.0\stasm4\stasm_lib.cpp tclhash.cpp mainwindow.ui    
 
 clean: compiler_clean 
-	-$(DEL_FILE) release\main.o release\Git.o release\Detectors.o release\Git.o release\Context.o release\Git.o release\eye.o release\Git.o release\faces.o release\Git.o release\fast2.o release\Git.o release\fft.o release\Git.o release\follow.o release\Git.o release\gif.o release\Git.o release\im_face.o release\Git.o release\img.o release\Git.o release\ip.o release\Git.o release\just.o release\Git.o release\kdoi.o release\Git.o release\kmain.o release\Git.o release\list.o release\Git.o release\mat.o release\Git.o release\myhebp.o release\Git.o release\nn.o release\Git.o release\search.o release\Git.o release\system.o release\Git.o release\tclHash.o release\Git.o release\tool.o release\Git.o release\vote.o release\Git.o release\Frame.o release\Project4.o release\context.o release\eye.o release\fast2.o release\follow.o release\img.o release\mainwindow.o release\mat.o release\search.o release\system.o release\tclhash.o release\moc_mainwindow.o
+	-$(DEL_FILE) release\main.o release\Project4.o release\mainwindow.o release\mat.o release\facedet.o release\initasm.o release\asm.o release\classicdesc.o release\convshape.o release\err.o release\eyedet.o release\eyedist.o release\faceroi.o release\hat.o release\hatdesc.o release\landmarks.o release\misc.o release\pinstart.o release\print.o release\shape17.o release\shapehacks.o release\shapemod.o release\startshape.o release\stasm.o release\stasm_lib.o release\tclhash.o release\moc_mainwindow.o
 
 distclean: clean 
 	-$(DEL_FILE) .qmake.stash
@@ -592,150 +778,6 @@ release/main.o: main.cpp C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/QApp
 		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qicon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o main.cpp
 
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/Detectors.o: Workspace/ComputerVision-master/Plugins/Databases/Cache/Detectors.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Detectors.o Workspace\ComputerVision-master\Plugins\Databases\Cache\Detectors.cpp
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/Context.o: Workspace/ComputerVision-master/Algorithms/Detection/Common/Context.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Context.o Workspace\ComputerVision-master\Algorithms\Detection\Common\Context.cpp
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/eye.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/eye.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\eye.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\eye.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/faces.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/faces.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\faces.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\faces.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/fast2.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/fast2.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\fast2.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\fast2.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/fft.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/fft.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\fft.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\fft.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/follow.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/follow.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\follow.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\follow.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/gif.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/gif.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\gif.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\gif.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/im_face.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/im_face.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\im_face.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\im_face.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/img.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/img.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\img.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\img.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/ip.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/ip.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\ip.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\ip.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/just.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/just.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\just.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\just.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/kdoi.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/kdoi.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\kdoi.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\kdoi.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/kmain.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/kmain.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\kmain.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\kmain.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/list.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/list.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\list.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\list.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/mat.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/mat.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mat.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\mat.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/myhebp.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/myhebp.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\myhebp.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\myhebp.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/nn.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/nn.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\nn.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\nn.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/search.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/search.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\search.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\search.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/system.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/system.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\system.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\system.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/tclHash.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/tclHash.c 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\tclHash.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\tclHash.c
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/tool.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/tool.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\tool.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\tool.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/vote.o: Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/vote.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\vote.o Workspace\ComputerVision-master\Algorithms\Detection\Rowley\detect\vote.cc
-
-release/Git.o: +$(EQ)C:/Git 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\Git.o +=C:\Git
-
-release/Frame.o: Workspace/ComputerVision-master/Common/Frame/Frame.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Frame.o Workspace\ComputerVision-master\Common\Frame\Frame.cpp
-
 release/Project4.o: Project4.cpp mainwindow.h \
 		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/QMainWindow \
 		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/qmainwindow.h \
@@ -881,13 +923,6 @@ release/Project4.o: Project4.cpp mainwindow.h \
 		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/QToolBar \
 		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/qtoolbar.h \
 		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/QWidget \
-		img.h \
-		tclHash.h \
-		mat.h \
-		list.h \
-		search.h \
-		list.cpp \
-		follow.h \
 		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QtGui \
 		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QtGuiDepends \
 		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QtCore \
@@ -1113,23 +1148,24 @@ release/Project4.o: Project4.cpp mainwindow.h \
 		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QByteArray \
 		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QList \
 		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QDir \
-		structs.h \
-		C:/Git\ Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/im_face.cc \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QPoint \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/img.hpp \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/tclHash.h \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/gif.hpp \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect.h \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/structs.h \
-		../../../../ComputerVision-master/Algorithms/Detection/Common/Context.h \
-		../../../../ComputerVision-master/Algorithms/Common/Algorithms.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QDataStream \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QMultiMap \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QMap \
-		../../../../ComputerVision-master/Common/Frame/Frame.h \
+		D:/aminegar/Downloads/opencv/include/opencv/cv.h \
+		D:/aminegar/Downloads/opencv/include/opencv/cxcore.h \
+		D:/aminegar/Downloads/opencv/include/opencv/cxtypes.h \
+		D:/aminegar/Downloads/opencv/include/opencv/cxerror.h \
+		D:/aminegar/Downloads/opencv/include/opencv/cvver.h \
+		D:/aminegar/Downloads/opencv/include/opencv/cxcore.hpp \
+		D:/aminegar/Downloads/opencv/include/opencv/cxmisc.h \
+		D:/opencv/build/include/opencv2/cvconfig.h \
+		D:/aminegar/Downloads/opencv/include/opencv/cxoperations.hpp \
+		D:/aminegar/Downloads/opencv/include/opencv/cxmat.hpp \
+		D:/aminegar/Downloads/opencv/include/opencv/cxflann.h \
+		D:/aminegar/Downloads/opencv/include/opencv/cvtypes.h \
+		D:/aminegar/Downloads/opencv/include/opencv/cv.hpp \
+		D:/aminegar/Downloads/opencv/include/opencv/cvcompat.h \
+		D:/aminegar/Downloads/opencv/include/opencv2/highgui/highgui.hpp \
+		D:/opencv/build/include/opencv2/core/core.hpp \
 		D:/opencv/build/include/opencv2/core.hpp \
 		D:/opencv/build/include/opencv2/core/cvdef.h \
-		D:/opencv/build/include/opencv2/cvconfig.h \
 		D:/opencv/build/include/opencv2/core/hal/interface.h \
 		D:/opencv/build/include/opencv2/core/cv_cpu_dispatch.h \
 		D:/opencv/build/include/opencv2/core/cv_cpu_helper.h \
@@ -1156,826 +1192,13 @@ release/Project4.o: Project4.cpp mainwindow.h \
 		D:/opencv/build/include/opencv2/core/utility.hpp \
 		D:/opencv/build/include/opencv2/core/optim.hpp \
 		D:/opencv/build/include/opencv2/core/ovx.hpp \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QPixmap \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/eye.hpp \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/search.hpp \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/list.cc \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/list.hpp \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/follow.hpp \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/mat.hpp \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/fast2.hpp \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/myhebp.hpp \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/kdoi.hpp \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/vote.hpp \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/just.hpp \
-		context.h \
-		C:/Git\ Workspace/ComputerVision-master/Algorithms/Common/Algorithms.h \
-		D:/aminegar/Downloads/opencv/include/opencv/cv.h \
-		D:/aminegar/Downloads/opencv/include/opencv/cxcore.h \
-		D:/aminegar/Downloads/opencv/include/opencv/cxtypes.h \
-		D:/aminegar/Downloads/opencv/include/opencv/cxerror.h \
-		D:/aminegar/Downloads/opencv/include/opencv/cvver.h \
-		D:/aminegar/Downloads/opencv/include/opencv/cxcore.hpp \
-		D:/aminegar/Downloads/opencv/include/opencv/cxmisc.h \
-		D:/aminegar/Downloads/opencv/include/opencv/cxoperations.hpp \
-		D:/aminegar/Downloads/opencv/include/opencv/cxmat.hpp \
-		D:/aminegar/Downloads/opencv/include/opencv/cxflann.h \
-		D:/aminegar/Downloads/opencv/include/opencv/cvtypes.h \
-		D:/aminegar/Downloads/opencv/include/opencv/cv.hpp \
-		D:/aminegar/Downloads/opencv/include/opencv/cvcompat.h \
-		D:/aminegar/Downloads/opencv/include/opencv2/highgui/highgui.hpp \
-		D:/opencv/build/include/opencv2/core/core.hpp \
 		D:/opencv/build/include/opencv2/highgui/highgui_c.h \
 		D:/opencv/build/include/opencv2/core/core_c.h \
 		D:/opencv/build/include/opencv2/core/types_c.h \
 		D:/opencv/build/include/opencv2/imgproc/imgproc_c.h \
-		D:/opencv/build/include/opencv2/imgproc/types_c.h
+		D:/opencv/build/include/opencv2/imgproc/types_c.h \
+		D:/aminegar/Downloads/EE_596_Final/EE_596_Final/FinalProject/Code/stasm4.1.0/stasm4/stasm_lib.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Project4.o Project4.cpp
-
-release/context.o: context.cpp C:/Git\ Workspace/ComputerVision-master/Algorithms/Common/Context.h \
-		../../../../ComputerVision-master/Algorithms/Detection/Common/Context.h \
-		../../../../ComputerVision-master/Algorithms/Common/Algorithms.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QDataStream \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qdatastream.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qscopedpointer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qglobal.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qconfig.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtcore-config.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsystemdetection.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qprocessordetection.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcompilerdetection.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtypeinfo.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsysinfo.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlogging.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qflags.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qatomic.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbasicatomic.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qgenericatomic.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qatomic_msvc.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qglobalstatic.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmutex.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qnumeric.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qversiontagging.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qiodevice.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qobject.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qnamespace.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstring.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qchar.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbytearray.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qrefcount.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qarraydata.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringliteral.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringalgorithms.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringview.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringbuilder.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlist.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qalgorithms.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qiterator.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qhashfunctions.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qpair.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qvector.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbytearraylist.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringlist.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qregexp.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcoreevent.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmetatype.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qvarlengtharray.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcontainerfwd.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qobject_impl.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QMultiMap \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmap.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qhash.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtextstream.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlocale.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qset.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcontiguouscache.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsharedpointer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsharedpointer_impl.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QMap \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QPoint \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QRect \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qrect.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmargins.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsize.h \
-		../../../../ComputerVision-master/Algorithms/Vectorization/Common/Context.h \
-		../../../../ComputerVision-master/Algorithms/Vectorization/Shape/Common/Context.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QVector \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QSize \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QString
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\context.o context.cpp
-
-release/eye.o: eye.cpp img.h \
-		tclHash.h \
-		C:/Git\ Workspace/ComputerVision-master/Algorithms/Detection/Rowley/detect/myhebp.hpp \
-		../../../../ComputerVision-master/Algorithms/Detection/Rowley/detect/fast2.hpp \
-		fast2.h \
-		eye.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QtGui \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QtGuiDepends \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QtCore \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QtCoreDepends \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qglobal.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qconfig.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtcore-config.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsystemdetection.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qprocessordetection.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcompilerdetection.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtypeinfo.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsysinfo.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlogging.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qflags.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qatomic.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbasicatomic.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qgenericatomic.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qatomic_msvc.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qglobalstatic.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmutex.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qnumeric.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qversiontagging.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qabstractanimation.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qobject.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qnamespace.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstring.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qchar.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbytearray.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qrefcount.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qarraydata.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringliteral.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringalgorithms.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringview.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringbuilder.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlist.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qalgorithms.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qiterator.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qhashfunctions.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qpair.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qvector.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbytearraylist.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringlist.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qregexp.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcoreevent.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qscopedpointer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmetatype.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qvarlengtharray.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcontainerfwd.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qobject_impl.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qabstracteventdispatcher.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qeventloop.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qabstractitemmodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmap.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qhash.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtextstream.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qiodevice.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlocale.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qset.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcontiguouscache.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsharedpointer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsharedpointer_impl.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qabstractnativeeventfilter.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qabstractproxymodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qabstractstate.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qabstracttransition.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qanimationgroup.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qarraydataops.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qarraydatapointer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbasictimer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbitarray.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbuffer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbytearraymatcher.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcache.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcborarray.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcborvalue.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qdatetime.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcborcommon.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qregularexpression.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qurl.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qurlquery.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/quuid.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcbormap.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcborstream.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfloat16.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcollator.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcommandlineoption.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcommandlineparser.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcoreapplication.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qconcatenatetablesproxymodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcryptographichash.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qdatastream.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qdeadlinetimer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qelapsedtimer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qdir.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfileinfo.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfile.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfiledevice.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qdiriterator.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qeasingcurve.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qendian.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qeventtransition.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qexception.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfactoryinterface.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfileselector.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QObject \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QStringList \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfilesystemwatcher.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfinalstate.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfuture.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfutureinterface.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qrunnable.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qresultstore.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfuturesynchronizer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfuturewatcher.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qhistorystate.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qidentityproxymodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qisenum.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qitemselectionmodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qjsonarray.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qjsonvalue.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qjsondocument.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qjsonobject.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlibrary.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlibraryinfo.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qversionnumber.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qline.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlinkedlist.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlockfile.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qloggingcategory.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmargins.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmath.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmessageauthenticationcode.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmetaobject.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmimedata.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmimedatabase.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmimetype.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qobjectcleanuphandler.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qoperatingsystemversion.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qparallelanimationgroup.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qpauseanimation.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qplugin.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qpointer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qpluginloader.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qprocess.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qpropertyanimation.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qvariantanimation.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qqueue.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qrandom.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qreadwritelock.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qrect.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsize.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qresource.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsavefile.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qscopedvaluerollback.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qscopeguard.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsemaphore.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsequentialanimationgroup.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsettings.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsharedmemory.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsignalmapper.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsignaltransition.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsocketnotifier.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsortfilterproxymodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstack.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstandardpaths.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstate.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstatemachine.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstorageinfo.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringlistmodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsystemsemaphore.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtemporarydir.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtemporaryfile.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtextboundaryfinder.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtextcodec.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qthread.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qthreadpool.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qthreadstorage.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtimeline.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtimer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtimezone.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtranslator.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtransposeproxymodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtypetraits.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qwaitcondition.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qwineventnotifier.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qxmlstream.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtcoreversion.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtguiglobal.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtgui-config.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qabstracttextdocumentlayout.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextlayout.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qcolor.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qrgb.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qrgba64.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qevent.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qwindowdefs.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qwindowdefs_win.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qregion.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qkeysequence.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qvector2d.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtouchdevice.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextformat.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qfont.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpen.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qbrush.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qmatrix.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpolygon.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtransform.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpainterpath.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qimage.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpaintdevice.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpixelformat.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpixmap.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextoption.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qglyphrun.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qrawfont.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qfontdatabase.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextcursor.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextdocument.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpalette.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qaccessible.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qaccessiblebridge.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qaccessibleobject.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qaccessibleplugin.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qbackingstore.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qwindow.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QEvent \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QMargins \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QRect \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qsurface.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qsurfaceformat.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qicon.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qcursor.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qbitmap.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qclipboard.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qdesktopservices.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qdrag.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qfontinfo.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qfontmetrics.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qgenericmatrix.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qgenericplugin.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qgenericpluginfactory.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qiconengine.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qiconengineplugin.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qimageiohandler.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qimagereader.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qimagewriter.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qmatrix4x4.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qvector3d.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qvector4d.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qquaternion.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qmovie.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qoffscreensurface.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopengl.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qt_windows.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtANGLE/GLES3/gl3.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtANGLE/GLES3/gl3platform.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtANGLE/KHR/khrplatform.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtANGLE/GLES2/gl2.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtANGLE/GLES2/gl2platform.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopengles2ext.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglext.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglbuffer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglcontext.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QScopedPointer \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QSurfaceFormat \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglversionfunctions.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopengldebug.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglextrafunctions.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglfunctions.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglframebufferobject.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglpaintdevice.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglpixeltransferoptions.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QSharedDataPointer \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglshaderprogram.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopengltexture.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopengltextureblitter.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QMatrix3x3 \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QMatrix4x4 \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopengltimerquery.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglvertexarrayobject.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglwindow.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QPaintDeviceWindow \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpaintdevicewindow.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QWindow \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QPaintDevice \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QOpenGLContext \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QImage \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpagedpaintdevice.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpagelayout.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpagesize.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpaintengine.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpainter.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpdfwriter.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpicture.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpictureformatplugin.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpixmapcache.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qrasterwindow.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qscreen.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QList \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QSize \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QSizeF \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QTransform \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qsessionmanager.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qstandarditemmodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qstatictext.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qstylehints.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qsyntaxhighlighter.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextobject.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextdocumentfragment.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextdocumentwriter.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextlist.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtexttable.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qvalidator.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtguiversion.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QByteArray \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QList \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/qtwidgetsglobal.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/qtwidgets-config.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/qwidget.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/qsizepolicy.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QDir \
-		system.h \
-		mat.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\eye.o eye.cpp
-
-release/fast2.o: fast2.cpp system.h \
-		fast2.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\fast2.o fast2.cpp
-
-release/follow.o: follow.cpp follow.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QtGui \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QtGuiDepends \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QtCore \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QtCoreDepends \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qglobal.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qconfig.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtcore-config.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsystemdetection.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qprocessordetection.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcompilerdetection.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtypeinfo.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsysinfo.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlogging.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qflags.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qatomic.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbasicatomic.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qgenericatomic.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qatomic_msvc.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qglobalstatic.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmutex.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qnumeric.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qversiontagging.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qabstractanimation.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qobject.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qnamespace.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstring.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qchar.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbytearray.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qrefcount.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qarraydata.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringliteral.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringalgorithms.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringview.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringbuilder.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlist.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qalgorithms.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qiterator.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qhashfunctions.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qpair.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qvector.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbytearraylist.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringlist.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qregexp.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcoreevent.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qscopedpointer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmetatype.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qvarlengtharray.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcontainerfwd.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qobject_impl.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qabstracteventdispatcher.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qeventloop.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qabstractitemmodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmap.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qhash.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtextstream.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qiodevice.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlocale.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qset.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcontiguouscache.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsharedpointer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsharedpointer_impl.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qabstractnativeeventfilter.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qabstractproxymodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qabstractstate.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qabstracttransition.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qanimationgroup.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qarraydataops.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qarraydatapointer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbasictimer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbitarray.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbuffer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qbytearraymatcher.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcache.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcborarray.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcborvalue.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qdatetime.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcborcommon.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qregularexpression.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qurl.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qurlquery.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/quuid.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcbormap.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcborstream.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfloat16.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcollator.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcommandlineoption.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcommandlineparser.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcoreapplication.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qconcatenatetablesproxymodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qcryptographichash.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qdatastream.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qdeadlinetimer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qelapsedtimer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qdir.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfileinfo.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfile.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfiledevice.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qdiriterator.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qeasingcurve.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qendian.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qeventtransition.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qexception.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfactoryinterface.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfileselector.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QObject \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QStringList \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfilesystemwatcher.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfinalstate.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfuture.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfutureinterface.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qrunnable.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qresultstore.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfuturesynchronizer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qfuturewatcher.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qhistorystate.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qidentityproxymodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qisenum.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qitemselectionmodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qjsonarray.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qjsonvalue.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qjsondocument.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qjsonobject.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlibrary.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlibraryinfo.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qversionnumber.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qline.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlinkedlist.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qlockfile.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qloggingcategory.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmargins.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmath.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmessageauthenticationcode.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmetaobject.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmimedata.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmimedatabase.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qmimetype.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qobjectcleanuphandler.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qoperatingsystemversion.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qparallelanimationgroup.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qpauseanimation.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qplugin.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qpointer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qpluginloader.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qprocess.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qpropertyanimation.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qvariantanimation.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qqueue.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qrandom.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qreadwritelock.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qrect.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsize.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qresource.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsavefile.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qscopedvaluerollback.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qscopeguard.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsemaphore.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsequentialanimationgroup.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsettings.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsharedmemory.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsignalmapper.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsignaltransition.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsocketnotifier.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsortfilterproxymodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstack.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstandardpaths.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstate.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstatemachine.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstorageinfo.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qstringlistmodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qsystemsemaphore.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtemporarydir.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtemporaryfile.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtextboundaryfinder.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtextcodec.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qthread.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qthreadpool.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qthreadstorage.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtimeline.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtimer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtimezone.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtranslator.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtransposeproxymodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtypetraits.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qwaitcondition.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qwineventnotifier.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qxmlstream.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qtcoreversion.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtguiglobal.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtgui-config.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qabstracttextdocumentlayout.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextlayout.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qcolor.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qrgb.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qrgba64.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qevent.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qwindowdefs.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qwindowdefs_win.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qregion.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qkeysequence.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qvector2d.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtouchdevice.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextformat.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qfont.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpen.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qbrush.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qmatrix.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpolygon.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtransform.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpainterpath.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qimage.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpaintdevice.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpixelformat.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpixmap.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextoption.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qglyphrun.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qrawfont.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qfontdatabase.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextcursor.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextdocument.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpalette.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qaccessible.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qaccessiblebridge.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qaccessibleobject.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qaccessibleplugin.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qbackingstore.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qwindow.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QEvent \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QMargins \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QRect \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qsurface.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qsurfaceformat.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qicon.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qcursor.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qbitmap.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qclipboard.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qdesktopservices.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qdrag.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qfontinfo.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qfontmetrics.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qgenericmatrix.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qgenericplugin.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qgenericpluginfactory.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qiconengine.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qiconengineplugin.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qimageiohandler.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qimagereader.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qimagewriter.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qmatrix4x4.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qvector3d.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qvector4d.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qquaternion.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qmovie.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qoffscreensurface.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopengl.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/qt_windows.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtANGLE/GLES3/gl3.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtANGLE/GLES3/gl3platform.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtANGLE/KHR/khrplatform.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtANGLE/GLES2/gl2.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtANGLE/GLES2/gl2platform.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopengles2ext.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglext.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglbuffer.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglcontext.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QScopedPointer \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QSurfaceFormat \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglversionfunctions.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopengldebug.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglextrafunctions.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglfunctions.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglframebufferobject.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglpaintdevice.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglpixeltransferoptions.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QSharedDataPointer \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglshaderprogram.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopengltexture.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopengltextureblitter.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QMatrix3x3 \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QMatrix4x4 \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopengltimerquery.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglvertexarrayobject.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qopenglwindow.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QPaintDeviceWindow \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpaintdevicewindow.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QWindow \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QPaintDevice \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QOpenGLContext \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QImage \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpagedpaintdevice.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpagelayout.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpagesize.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpaintengine.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpainter.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpdfwriter.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpicture.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpictureformatplugin.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qpixmapcache.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qrasterwindow.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qscreen.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QList \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QSize \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QSizeF \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QTransform \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qsessionmanager.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qstandarditemmodel.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qstatictext.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qstylehints.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qsyntaxhighlighter.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextobject.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextdocumentfragment.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextdocumentwriter.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtextlist.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtexttable.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qvalidator.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/qtguiversion.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QByteArray \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtGui/QList \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/qtwidgetsglobal.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/qtwidgets-config.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/qwidget.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/qsizepolicy.h \
-		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtCore/QDir \
-		search.h \
-		img.h \
-		tclHash.h \
-		list.cpp \
-		list.h \
-		mat.h \
-		system.h \
-		fast2.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\follow.o follow.cpp
-
-release/img.o: img.cpp img.h \
-		tclHash.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\img.o img.cpp
 
 release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		C:/Qt/Qt5.13.1/5.13.1/mingw73_64/include/QtWidgets/QMainWindow \
@@ -2353,18 +1576,861 @@ release/mat.o: mat.cpp mat.h \
 		system.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mat.o mat.cpp
 
-release/search.o: search.cpp search.h \
-		img.h \
-		tclHash.h \
-		list.cpp \
-		list.h \
-		system.h \
-		mat.h \
-		fast2.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\search.o search.cpp
+release/facedet.o: stasm4.1.0/stasm4/MOD_1/facedet.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\facedet.o stasm4.1.0\stasm4\MOD_1\facedet.cpp
 
-release/system.o: system.cpp system.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\system.o system.cpp
+release/initasm.o: stasm4.1.0/stasm4/MOD_1/initasm.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_shapemodel.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p00_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p01_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p02_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p03_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p04_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p05_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p06_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p07_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p08_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p09_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p10_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p11_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p12_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p13_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p14_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p15_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p16_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p17_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p18_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p19_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p20_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p21_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p22_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p23_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p24_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p25_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p26_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p27_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p28_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p29_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p30_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p31_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p32_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p33_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p34_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p35_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p36_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p37_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p38_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p39_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p40_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p41_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p42_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p43_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p44_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p45_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p46_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p47_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p48_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p49_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p50_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p51_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p52_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p53_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p54_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p55_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p56_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p57_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p58_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p59_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p60_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p61_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p62_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p63_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p64_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p65_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p66_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p67_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p68_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p69_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p70_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p71_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p72_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p73_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p74_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p75_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev0_p76_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p00_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p01_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p02_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p03_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p04_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p05_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p06_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p07_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p08_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p09_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p10_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p11_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p12_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p13_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p14_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p15_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p16_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p17_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p18_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p19_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p20_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p21_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p22_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p23_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p24_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p25_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p26_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p27_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p28_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p29_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p30_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p31_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p32_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p33_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p34_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p35_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p36_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p37_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p38_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p39_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p40_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p41_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p42_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p43_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p44_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p45_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p46_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p47_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p48_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p49_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p50_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p51_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p52_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p53_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p54_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p55_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p56_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p57_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p58_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p59_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p60_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p61_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p62_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p63_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p64_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p65_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p66_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p67_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p68_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p69_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p70_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p71_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p72_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p73_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p74_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p75_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev1_p76_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p00_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p01_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p02_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p03_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p04_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p05_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p06_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p07_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p08_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p09_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p10_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p11_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p12_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p13_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p14_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p15_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p16_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p17_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p18_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p19_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p20_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p21_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p22_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p23_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p24_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p25_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p26_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p27_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p28_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p29_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p30_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p31_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p32_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p33_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p34_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p35_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p36_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p37_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p38_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p39_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p40_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p41_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p42_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p43_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p44_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p45_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p46_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p47_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p48_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p49_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p50_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p51_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p52_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p53_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p54_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p55_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p56_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p57_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p58_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p59_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p60_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p61_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p62_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p63_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p64_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p65_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p66_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p67_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p68_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p69_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p70_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p71_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p72_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p73_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p74_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p75_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev2_p76_hat.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p00_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p01_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p02_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p03_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p04_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p05_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p06_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p07_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p08_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p09_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p10_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p11_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p12_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p13_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p14_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p15_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p16_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p17_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p18_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p19_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p20_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p21_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p22_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p23_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p24_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p25_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p26_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p27_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p28_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p29_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p30_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p31_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p32_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p33_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p34_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p35_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p36_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p37_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p38_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p39_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p40_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p41_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p42_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p43_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p44_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p45_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p46_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p47_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p48_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p49_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p50_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p51_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p52_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p53_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p54_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p55_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p56_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p57_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p58_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p59_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p60_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p61_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p62_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p63_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p64_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p65_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p66_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p67_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p68_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p69_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p70_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p71_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p72_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p73_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p74_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p75_classic.mh \
+		stasm4.1.0/stasm4/MOD_1/mh/yaw00_lev3_p76_classic.mh
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\initasm.o stasm4.1.0\stasm4\MOD_1\initasm.cpp
+
+release/asm.o: stasm4.1.0/stasm4/asm.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\asm.o stasm4.1.0\stasm4\asm.cpp
+
+release/classicdesc.o: stasm4.1.0/stasm4/classicdesc.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\classicdesc.o stasm4.1.0\stasm4\classicdesc.cpp
+
+release/convshape.o: stasm4.1.0/stasm4/convshape.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\convshape.o stasm4.1.0\stasm4\convshape.cpp
+
+release/err.o: stasm4.1.0/stasm4/err.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\err.o stasm4.1.0\stasm4\err.cpp
+
+release/eyedet.o: stasm4.1.0/stasm4/eyedet.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\eyedet.o stasm4.1.0\stasm4\eyedet.cpp
+
+release/eyedist.o: stasm4.1.0/stasm4/eyedist.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\eyedist.o stasm4.1.0\stasm4\eyedist.cpp
+
+release/faceroi.o: stasm4.1.0/stasm4/faceroi.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\faceroi.o stasm4.1.0\stasm4\faceroi.cpp
+
+release/hat.o: stasm4.1.0/stasm4/hat.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\hat.o stasm4.1.0\stasm4\hat.cpp
+
+release/hatdesc.o: stasm4.1.0/stasm4/hatdesc.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\hatdesc.o stasm4.1.0\stasm4\hatdesc.cpp
+
+release/landmarks.o: stasm4.1.0/stasm4/landmarks.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\landmarks.o stasm4.1.0\stasm4\landmarks.cpp
+
+release/misc.o: stasm4.1.0/stasm4/misc.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\misc.o stasm4.1.0\stasm4\misc.cpp
+
+release/pinstart.o: stasm4.1.0/stasm4/pinstart.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\pinstart.o stasm4.1.0\stasm4\pinstart.cpp
+
+release/print.o: stasm4.1.0/stasm4/print.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\print.o stasm4.1.0\stasm4\print.cpp
+
+release/shape17.o: stasm4.1.0/stasm4/shape17.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\shape17.o stasm4.1.0\stasm4\shape17.cpp
+
+release/shapehacks.o: stasm4.1.0/stasm4/shapehacks.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\shapehacks.o stasm4.1.0\stasm4\shapehacks.cpp
+
+release/shapemod.o: stasm4.1.0/stasm4/shapemod.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\shapemod.o stasm4.1.0\stasm4\shapemod.cpp
+
+release/startshape.o: stasm4.1.0/stasm4/startshape.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\startshape.o stasm4.1.0\stasm4\startshape.cpp
+
+release/stasm.o: stasm4.1.0/stasm4/stasm.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\stasm.o stasm4.1.0\stasm4\stasm.cpp
+
+release/stasm_lib.o: stasm4.1.0/stasm4/stasm_lib.cpp stasm4.1.0/stasm4/stasm.h \
+		stasm4.1.0/stasm4/misc.h \
+		stasm4.1.0/stasm4/print.h \
+		stasm4.1.0/stasm4/err.h \
+		stasm4.1.0/stasm4/stasm_landmarks.h \
+		stasm4.1.0/stasm4/stasm_lib.h \
+		stasm4.1.0/stasm4/stasm_lib_ext.h \
+		stasm4.1.0/stasm4/atface.h \
+		stasm4.1.0/stasm4/landmarks.h \
+		stasm4.1.0/stasm4/landtab_muct77.h \
+		stasm4.1.0/stasm4/basedesc.h \
+		stasm4.1.0/stasm4/classicdesc.h \
+		stasm4.1.0/stasm4/hat.h \
+		stasm4.1.0/stasm4/hatdesc.h \
+		stasm4.1.0/stasm4/shapehacks.h \
+		stasm4.1.0/stasm4/shapemod.h \
+		stasm4.1.0/stasm4/asm.h \
+		stasm4.1.0/stasm4/eyedet.h \
+		stasm4.1.0/stasm4/convshape.h \
+		stasm4.1.0/stasm4/eyedist.h \
+		stasm4.1.0/stasm4/faceroi.h \
+		stasm4.1.0/stasm4/pinstart.h \
+		stasm4.1.0/stasm4/shape17.h \
+		stasm4.1.0/stasm4/startshape.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\stasm_lib.o stasm4.1.0\stasm4\stasm_lib.cpp
 
 release/tclhash.o: tclhash.cpp tclHash.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\tclhash.o tclhash.cpp
